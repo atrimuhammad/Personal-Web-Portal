@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1d18;
+}
+
+li, a, button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo {
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-size: 40px;
+    color: #ecf0f1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: auto;
+    left: 100px;
+    padding: 0 50px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 40px 10px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #135048;
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 50px;
+    padding: 9px 15px;
+    background-color: rgb(169, 96, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(169, 0, 0, 0.226);
+}
+
+
+
+.home{
+    display: flex;
+    height: 80vh;
+    color: #ecf0f1;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+    margin-right: 0;
+}
+.home .home1 .line1{
+    font-size: 27px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+.home .home1 .line2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-family: 'Lobster';
+}
+.home .home1 .line3{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+.home .home1 .line3 span{
+    color: rgb(160, 142, 146);
+    font-weight: 500;
+}
+.home .home1 a{
+    display: inline-block;
+    background: rgb(160, 142, 146);
+    color: #ecf0f1;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(160, 142, 146);
+    transition: all 0.3s ease;
+}
+.home .home1 a:hover{
+    color: rgb(160, 142, 146);
+    background: none;
+}
+
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 45%;
+    flex: 55%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* */
+.contact-info i {
+    color: rgb(240, 27, 98);
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.contact-info .info .head {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.contact-info .info .sub-title {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 80px;
+  }
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+
+.contact {
+    padding: 20px 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+input[type=text], textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    border-width: 2px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    resize: vertical;
+    color: #ecf0f1;
+  }
+  
+input[type=submit] {
+    display: inline-block;
+    background: rgb(160, 142, 146);
+    color: #ecf0f1;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid rgb(160, 142, 146);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #0d1d18;
+}
+
+.hobbies-info i {
+    color: rgb(240, 27, 98);
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.hobbies-info .info .icon1 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.hobbies-info .info .icon2 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.hobbies-info .info .icon3 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.hobbies-info .info .icon4 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+.split1 {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 80px;
+  }
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+
+.split2 {
+    height: 100%;
+    
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: -20px;
+  }
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+
+.projects-info i {
+    color: rgb(240, 27, 98);
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.projects-info .info .icon5 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.projects-info .info .l {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 13px;
+    margin-left: 92px;
+    margin-top: 10px;
+}
+.projects-info .info .icon6 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.projects-info .info .icon7 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.projects-info .info .icon8 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.projects-info .info .icon9 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.projects-info .info .icon10 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.skills .title{
+    color: #ecf0f1;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+.split3 {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: -20px;
+  }
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left span{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    margin-left: 50px;
+}
+.skills .skills-content .left .line{
+    height: 5px;
+    width: 60%;
+    background: #ecf0f1;
+    position: relative;
+    margin-left: 50px;
+}
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(240, 27, 98);
+}
+.skills-content .left .cplusplus::before{
+    width: 90%;
+}
+.skills-content .left .c::before{
+    width: 70%;
+}
+.skills-content .left .python::before{
+    width: 60%;
+}
+.skills-content .left .java::before{
+    width: 60%;
+}
+.skills-content .left .php::before{
+    width: 70%;
+}
+.skills-content .left .mysql::before{
+    width: 80%;
+}
+.skills-content .left .oracle::before{
+    width: 80%;
+}
+.skills-content .left .html::before{
+    width: 90%;
+}
+.skills-content .left .css::before{
+    width: 90%;
+}
+.skills-content .left .sql::before{
+    width: 90%;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    margin-left: 100px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 60%;
+    background: #ecf0f1;
+    position: relative;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(240, 27, 98);
+}
+.skills-content .right .leadership::before{
+    width: 80%;
+}
+.skills-content .right .teamwork::before{
+    width: 80%;
+}
+.skills-content .right .criticalthinking::before{
+    width: 75%;
+}
+.skills-content .right .workethics::before{
+    width: 80%;
+}
+.skills-content .right .communication::before{
+    width: 80%;
+}
+
+.split4 {
+    height: 100%;
+    width: 60%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+  
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+
+.profile-info i {
+    color: rgb(240, 27, 98);
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.profile-info .info .icon11 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.profile-info .info .lp1 {
+    font-family: "Ubuntu";
+    color: #ecf0f1;
+    font-size: 13px;
+    margin-left: 92px;
+    margin-top: 10px;
+}
